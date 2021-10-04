@@ -9,14 +9,16 @@
     <!--ícone da barra de navegação-->
     <link rel="shortcut icon" href="media/icons/favicon.png">
     <!-- Link externo para estilos em CSS-->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <!-- Link externo para scripts em javascript-->
     <script src="#" type="text/javascript"></script>
 </head>
 
 <body>
     <header>
-        <div>
+        <div id="logo">
             <a href="index.html">
                 <img src="media/logo/logo-name.png" alt="Logo GreenMommy">
             </a>
@@ -25,18 +27,18 @@
             <!--Barra de navegação-->
             <ul>
                 <li>
-                    <a href="#"><img src="media/icons/heart.svg" alt="ícone de coração">Mommy2Mommy</a>
+                    <a href="#"><img src="media/icons/heart.svg" alt="ícone de coração" class="icon-heart">Mommy2Mommy</a>
                 </li>
                 <li>
-                    <a href="products.html"><img src="media/icons/shopping-bag (1).svg" alt="ícone de sino">Produtos</a>
+                    <a href="products.html"><img src="media/icons/shopping-bag (1).svg" alt="ícone de sino" class="shopping-cart">Produtos</a>
                 </li>
                 <li>
-                    <a href="contact.html"><img src="media/icons/message-circle.svg" alt="ícone de mensagem">Fale
+                    <a href="contact.html"><img src="media/icons/message-circle.svg" alt="ícone de mensagem" class="icon-message">Fale
                         Conosco</a>
                 </li>
-                <li>
+                <li class="cart">
                     <a href="#">
-                        <img src="media/icons/shopping-cart.svg" alt="shopping-cart">
+                        <img src="media/icons/shopping-cart.svg" alt="shopping-cart" class="icon-cart">
                         <span>Carrinho</span>
                     </a>
                 </li>
@@ -44,243 +46,171 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="preference-menu">
             <!-- Link de acesso rápido à certos produtos-->
-            <div>
+            <div class="preference-button">
                 <a href="#">
                     <span>
                         Peles Acneicas
                     </span>
-                    <img src="media/icons/acne.png">
+                    <img src="media/icons/acne.png" class="preference-icon">
                 </a>
             </div>
-            <div>
+            <div class="preference-button">
                 <a href="#">
                     <span>
                         Envelhecimento e Rugas
                     </span>
-                    <img src="media/icons/envelhecimento.png">
+                    <img src="media/icons/envelhecimento.png" class="preference-icon">
                 </a>
             </div>
-            <div>
+            <div class="preference-button">
                 <a href="#">
                     <span>
                         Peles Sensíveis
                     </span>
-                    <img src="media/icons/cracked-skin.png">
+                    <img src="media/icons/cracked-skin.png" class="preference-icon">
                 </a href="#">
             </div>
-            <div>
+            <div class="preference-button">
                 <a href="#">
                     <span>
                         Outros Tratamentos
                     </span>
-                    <img src="media/icons/dermis.png">
+                    <img src="media/icons/dermis.png" class="preference-icon">
                 </a>
             </div>
         </section>
-        <div>
-            <!--Início do banner de pesquisas -->
+        <!--Início do banner de pesquisas -->
+        <div class="search-form">
             <picture>
-                <img src="media/photos/capa-search.jpg" alt="óleo feito com base de canabidiol">
+                <img src="media/photos/capa-search.jpg" alt="óleo feito com base de canabidiol" class="preference-image">
             </picture>
-        </div>
-        <div>
-            <form>
-                <input type="search" placeholder="Como podemos ajudá-la hoje?">
-                <button type="submit" title="buscar">
-                    <img src="media/icons/search.svg">
+            
+            <form class="form">
+                <input type="search" placeholder="Como podemos ajudá-la hoje?" class="input-form">
+                <button type="submit" title="buscar"class="search-icon1">
+                    <img src="media/icons/search.svg" >
                 </button>
             </form>
         </div>
         <!-- Fim do banner de pesquisas -->
         <section>
-            <div>
-                <h2>Produtos que nossas <span>Mammys</span> adoram</h2>
-            </div>
-            <div>
-                <ul>
+            <h2 class="title-section">Produtos que nossas <span>Mammys</span> adoram</h2>
+                <ul class="list-lbox">
                     <li>
-                        <a href="#">
-                            <div>
-                                <div>
-                                    <picture>
-                                        <img src="media/photos/cbd-oil-dropper-assortment.jpg">
-                                    </picture>
-                                </div>
-                                <div>
-                                    Oil Skin
-                                </div>
-                            </div>
+                        <a href="#img1" class="min">
+                        <img src="media/photos/cbd-oil-dropper-assortment.jpg">
+                        <span>Oil Skin</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <div>
-                                <div>
-                                    <picture>
-                                        <img src="media/photos/cbd-oil-dropper-composition.jpg">
-                                    </picture>
-                                </div>
-                                <div>
-                                    Oil Skin2
-                                </div>
-                            </div>
+                        <a href="#img2" class="min">
+                        <img src="media/photos/cbd-oil-dropper-composition.jpg">
+                        <span> Oil Skin2 </span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <div>
-                                <div>
-                                    <picture>
-                                        <img src="media/photos/organic-cbd-oil-dropper-assortment.jpg">
-                                    </picture>
-                                </div>
-                                <div>
-                                    Oil Skin3
-                                </div>
-                            </div>
+                        <a href="#img3" class="min">
+                        <img src="media/photos/organic-cbd-oil-dropper-assortment.jpg">
+                        <span>Oil Skin3</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <div>
-                                <div>
-                                    <picture>
-                                        <img src="media/photos/organic-cbd-oil-dropper-composition.jpg">
-                                    </picture>
-                                </div>
-                                <div>
-                                    Oil Skin4
-                                </div>
-                            </div>
+                        <a href="#img4" class="min">
+                        <img src="media/photos/organic-cbd-oil-dropper-composition.jpg">
+                        <span>Oil Skin4</span>
                         </a>
                     </li>
                 </ul>
-            </div>
         </section>
-        <div>
+        <section class="about-us">
             <h1>Liberdade para o seu Autocuidado</h1>
             <p>
                 Nossos produtos possuem o <span>Canabidiol</span> <abbr title="Canabidiol">(CDB)</abbr> em sua base.Um
-                <mark>fitocanabinoide</mark> não <mark>psicotrópico</mark> que ofecere os melhores benefícios terapêuticos e medicinais.
+                <em>fitocanabinoide</em> não <em>psicotrópico</em> que ofecere os melhores benefícios terapêuticos e medicinais.
             </p>
             <p>
-                Todos nossos produtos são <strong>naturais</strong>, seguros e derivados do <span>cânhamo</span> e da
-                <span>canabis</span>.
+                Todos nossos produtos são <strong>naturais</strong>, <strong>seguros</strong> e derivados do <strong>cânhamo</strong> e da
+                <strong>canabis</strong>.
             </p>
-        </div>
-        <!-- Tabela de comparação de benefícios -->
-        <div>
-            <table border=1>
-                <tr>
-                    <th colspan="2">Principais benefícios do <abbr title="Canabidiol">CDB</abbr></th>
-                </tr>
-                <tr>
-                    <th>Benefícios</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr>
-                    <td>Possui propriedades terapêuticas</td>
-                    <td>A  pode ter benefícios terapêuticos em pacientes que estejam a realizar quimioterapia, diminuindo os efeitos secundários deste tratamento oncológico.</td>
-                </tr>
-                <tr>
-                    <td>AntiCancerígeno</td>
-                    <td>O documento cita a investigação de Wai Liu, da Universidade de Londres, que mostra que o uso de canabidiol (CBD) e <em>tetrahidrocanabinol</em> (THC) - duas substâncias canabinoides presentes na cannabis sativa - inibem o glioma, um tipo de cancro cerebral.</td>
-                </tr>
-                <tr>
-                    <td>Diminui a apneia do sono</td>
-                    <td>Um estudo clínico com 17 pacientes com apneia do sono revelou que o extrato da cannabis sativa, o THC, melhorou significativamente os sintomas da doença.</td>
-                </tr>
-            </table>
-        </div>
-        <section>
-            <div>
+        </section>
+        <section class="purchase-infos">
                 <div>
-                    <div>
-                        <img src="media/icons/shopping-bag.svg" alt="ícone de sacola de compras">
-                    </div>
+                    <img src="media/icons/shopping-bag.svg" alt="ícone de sacola de compras">
                     <div>
                         <h3>Frete Gratis</h3>
                         <p>Confira Condições.</p>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <img src="media/icons/map-marker-1.svg">
-                    </div>
+                    <img src="media/icons/map-marker-1.svg">
                     <div>
                         <h3>Envio mais rápido</h3>
                         <p>Entregamos em todo o Brasil</p>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <img src="media/icons/credit-card.svg">
-                    </div>
+                    <img src="media/icons/credit-card.svg">
                     <div>
                         <h3>Até 12x Sem Juros</h3>
                         <p>10% OFF no Boleto/PIX</p>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <img src="media/icons/check-circle.svg">
-                    </div>
+                    <img src="media/icons/check-circle.svg">
                     <div>
                         <h3>100% Seguro</h3>
                         <p>Certificado SSL</p>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
     <!-- Esse campo será utilizado para receber o e-mail dos clientes e inscrevê-los em e-mail marketing-->
         <div>
-            <form>
+            <form class="subscribe">
                 <label for="mailchimp">Saiba Tudo Sobre As Melhores Novidade e Promoções</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email..." required>
-                <button type="submit" title="inscription">
-                    <img src="media/icons/mail.svg">
-                </button>
+                <input type="email" name="email" id="email" placeholder="Digite seu email..." required class="mailchimp-input">
             </form>
+            <!-- Esse campo será utilizado para receber o e-mail dos clientes e inscrevê-los em e-mail marketing-->
         </div>
-        <div>
-            <h4>Loja</h4>
-            <ul>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="#">Envio e Devoluções</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Segurança</h4>
+        <div class="footer-grid">
             <div>
-                <img src="media/icons/shield.svg" alt="ícone de proteção">
-                <p>
-                    Ambiente 100% Seguro. Sua Informação
-                    é Protegida Pela Criptografia SSL 256-Bit
-                </p>
-            </div>
-        </div>
-        <div>
-            <h4>Métodos de Pagamentos Aceitos</h4>
-            <img src="media/photos/compra-segura-e1600188323682-1024x322-1.png">
-        </div>
-        <div>
-            <div>
-                <a href="#"><img src="media/icons/whatsapp.svg" alt="ícone do WhatsApp"></a>
+                <h4>Loja</h4>
+                <ul>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="#">Envio e Devoluções</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
             </div>
             <div>
-                <a href="#"><img src="media/icons/facebook.svg" alt="ícone do Facebook"></a>
+                <h4>Segurança</h4>
+                <div>
+                    <p>
+                        Ambiente 100% Seguro. Sua Informação
+                        é Protegida Pela Criptografia SSL 256-Bit
+                    </p>
+                </div>
             </div>
             <div>
-                <a href="#"><img src="media/icons/instagram (1).svg" alt="ícone do Instagram"></a>
+                <h4>Métodos de Pagamentos Aceitos</h4>
+                <img src="media/photos/compra-segura-e1600188323682-1024x322-1.png">
+            </div>
+            <div>
+                <div>
+                    <a href="#"><img src="media/icons/whatsapp.svg" alt="ícone do WhatsApp"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="media/icons/facebook.svg" alt="ícone do Facebook"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="media/icons/instagram (1).svg" alt="ícone do Instagram"></a>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="info-site">
             <p> &#169;GreenMommy - Todos os Direitos reservados.</p>
         </div>
     </footer>

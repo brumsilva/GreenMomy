@@ -9,7 +9,9 @@
     <!--ícone da barra de navegação-->
     <link rel="shortcut icon" href="media/icons/favicon.png">
     <!-- Link externo para estilos em CSS-->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <!-- Link externo para scripts em javascript-->
     <script src="#" type="text/javascript"></script>
 </head>
@@ -46,14 +48,13 @@
         <header>
             <img src="media/photos/banner.jpg" alt="banner">
         </header>
-        <h1>Tem Dúvidas? Entre em contato conosco</h1>
-        <div>
+        <h1 class="page-header-title">Tem Dúvidas? Entre em contato conosco</h1>
+        <div class="page-content">
             Seus dados pessoais serão processados pela GreenMommy, Lda. com sede na Avenida Paulista, n.º 1, Edifício.
-            Para poder responder ao seu pedido de contacto, Leia com atenção a <a href="#"><strong>Política de
-                    Privacidade</strong></a> antes de submeter.
+            Para poder responder ao seu pedido de contacto, Leia com atenção a <a href="#"><strong>Política de Privacidade</strong></a> antes de submeter.
         </div>
         <fieldset>
-            <legend>Centro de Contato da GreenMommy</legend>
+            <h2>Centro de Contato da GreenMommy</h2>
             <div>
                 <label>Telefone: <a href="+5585994374607">85994374607</a></label>
             </div>
@@ -61,27 +62,26 @@
                 <label>E-mail: <a href="mailto:brnsadv@gmail.com">brnsadv@gmail.com</a></label>
             </div>
         </fieldset>
-        <div>
             <!-- Formulário de contato -->
-            <form>
+            <form> 
                 <h2>Formulário Online</h2>
-                <div>
+                <div class="form-group">
                     <label for="contact-info-1">*Nome:</label>
-                    <input type="text" name="contact" id="contact-info-1" required>
+                    <input type="text" name="contact" class="contact-info-1" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="contact-info-2">*Sobrenome:</label>
-                    <input type="text" name="contact" id="contact-info-2" required>
+                    <input type="text" name="contact" class="contact-info-2" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="contact-info-3">*Data de Nascimento:</label>
-                    <input type="date" name="contact" id="contact-info-3" required>
+                    <input type="date" name="contact" class="contact-info-3" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="contact-info-4">*Seu Melhor Número:</label>
-                    <input type="number" name="contact" id="contact-info-4" required>
+                    <input type="number" name="contact" class="contact-info-4" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="contact-info-5">Para nos contatar, escolha o assunto da lista apresentada abaixo,
                         escreva sua mensagem e clique em Submeter. Se seu assunto não estiver listado, escolha a opção
                         <strong>OUTRO.</strong></label>
@@ -92,67 +92,65 @@
                         <option>Reclamação</option>
                     </select>
                 </div>
-                <div>
-                    <label>*Mensagem</label>
+                <div class="form-group">
+                    <label for="contact-info-6">*Mensagem</label>
                     <textarea></textarea>
                 </div>
-                <br>
                 <!-- Botões de submit e reset das informações do formulário -->
-                <div>
-                    <input type="submit" value="ENVIAR">
-                    <input type="reset" name="button" value="RESETAR">
+                <div class="form-btns">
+                    <input type="submit" value="ENVIAR" class="form-btn">
+                    <input type="reset" name="button" value="RESETAR" class="form-btn">
                 </div>
             </form>
-        </div>
     </main>
     <footer>
-        <div>
-            <form>
-                <label for="mailchimp">Saiba Tudo Sobre As Melhores Novidade e Promoções</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email..." required>
-                <button type="submit" title="inscription">
-                    <img src="media/icons/mail.svg">
-                </button>
-            </form>
-        </div>
-        <div>
-            <h4>Loja</h4>
-            <ul>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="#">Envio e Devoluções</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Segurança</h4>
+        <!-- Esse campo será utilizado para receber o e-mail dos clientes e inscrevê-los em e-mail marketing-->
             <div>
-                <img src="media/icons/shield.svg" alt="ícone de proteção">
-                <p>
-                    Ambiente 100% Seguro. Sua Informação
-                    é Protegida Pela Criptografia SSL 256-Bit
-                </p>
+                <form class="subscribe">
+                    <label for="mailchimp">Saiba Tudo Sobre As Melhores Novidade e Promoções</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email..." required class="mailchimp-input">
+                </form>
+                <!-- Esse campo será utilizado para receber o e-mail dos clientes e inscrevê-los em e-mail marketing-->
             </div>
-        </div>
-        <div>
-            <h4>Métodos de Pagamentos Aceitos</h4>
-            <img src="media/photos/compra-segura-e1600188323682-1024x322-1.png">
-        </div>
-        <div>
-            <div>
-                <a href="#"><img src="media/icons/whatsapp.svg" alt="ícone do WhatsApp"></a>
+            <div class="footer-grid">
+                <div>
+                    <h4>Loja</h4>
+                    <ul>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">Envio e Devoluções</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Segurança</h4>
+                    <div>
+                        <p>
+                            Ambiente 100% Seguro. Sua Informação
+                            é Protegida Pela Criptografia SSL 256-Bit
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Métodos de Pagamentos Aceitos</h4>
+                    <img src="media/photos/compra-segura-e1600188323682-1024x322-1.png">
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="media/icons/whatsapp.svg" alt="ícone do WhatsApp"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="media/icons/facebook.svg" alt="ícone do Facebook"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="media/icons/instagram (1).svg" alt="ícone do Instagram"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#"><img src="media/icons/facebook.svg" alt="ícone do Facebook"></a>
+            <div class="info-site">
+                <p> &#169;GreenMommy - Todos os Direitos reservados.</p>
             </div>
-            <div>
-                <a href="#"><img src="media/icons/instagram (1).svg" alt="ícone do Instagram"></a>
-            </div>
-        </div>
-        <div>
-            <p> &#169;GreenMommy - Todos os Direitos reservados.</p>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

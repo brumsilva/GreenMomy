@@ -1,0 +1,215 @@
+/* infos globais*/
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Myfont;
+    src: url(../font/Bely\ Display\ W00\ Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap');
+
+/* infos globais*/
+
+/* estilos padrões das páginas*/
+main {
+    width: 1095px;
+    margin: 0 auto;
+}
+
+/* Header + Navbar*/
+header {
+    width: 1095px;
+    margin: 0 auto;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color:#060606;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin: 0 15px 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+nav li:hover {
+    font-weight: bold;
+}
+
+
+nav li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#logo {
+    float: left;
+    display: flex;
+    justify-content:flex-start;
+}
+
+/* Formulário */
+
+.page-header-title {
+    font-family: 'MyFont';
+    color: #3B4938;
+    margin-bottom: 20px;
+}
+
+.page-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #3B4938;
+    border: none;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+fieldset h2 {
+    font-weight: bold;
+}
+
+fieldset a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form h2 {
+    font-family: 'MyFont';
+    color: #3B4938;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.form-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: #3B4938;
+    border: 1px solid #3B4938;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.form-btn:hover {
+   background-color: #3B4938;
+   border: none;
+   color: #fff;
+   font-weight: bold;
+}
+
+.form-btns {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #303032;
+}
+
+.subscribe {
+    padding: 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'MyFont';
+    font-size: 25px;
+    color: #fff;
+}
+
+.subscribe .mailchimp-input {
+    position: relative;
+    width: 35%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.footer-grid h4 {
+    font-family: 'MyFont';
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-grid li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8px;
+}
+
+.footer-grid p {
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-grid li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.info-site {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+

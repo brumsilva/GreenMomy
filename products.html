@@ -9,7 +9,9 @@
     <!--ícone da barra de navegação-->
     <link rel="shortcut icon" href="media/icons/favicon.png">
     <!-- Link externo para estilos em CSS-->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <!-- Link externo para scripts em javascript-->
     <script src="#" type="text/javascript"></script>
 </head>
@@ -45,109 +47,92 @@
         <header>
             <img src="media/photos/banner.jpg" alt="banner">
         </header>
-        <section>
+        <section class="conatiner-content">
             <!--Listagem dos produtos-->
             <!-- Cada produto está dentro das divs maiores para facilitar a estilização-->
-            <div>
-                <h1>Linha GreenMommy - Óleos essenciais</h1>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <a>
-                            <img src="media/photos/logo_Prancheta 1 cópia 7.png" alt="produto 1">
-                        </a>
-                    </div>
-                    <div>
-                        <div>
-                            <a>Cannabis Sativa Óleo de Limpeza</a>
-                            <div>R$ 10,00</div>
-                            <div>125ml</div>
-                            <div>IVA incluído</div>
-                            <div>Preço Válido de 1 a 31 de fevereiro</div>
+            <h1>Linha GreenMommy - Óleos essenciais</h1>
+                    <div class="products">
+                        <div class="product1">
+                            <a>
+                                <img src="media/photos/logo_Prancheta 1 cópia 7.png" alt="produto 1">
+                            </a>
+                            <div>
+                                <div class="description1">
+                                    <a>Cannabis Sativa Óleo de Limpeza</a>
+                                    <span>R$ 10,00</span>
+                                    <span>125ml</span>
+                                    <span>IVA incluído</span>
+                                    <span>Preço Válido de 1 a 31 de fevereiro</span>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="media/icons/minus-circle.svg" alt="minus">
+                                    </a>
+                                    <input ng-model="quantity">
+                                    <a href="#">
+                                        <img src="media/icons/plus-circle.svg" alt="plus">
+                                    </a>
+                                    <a href="#">
+                                        <span>Adicionar</span>
+                                    </a>
                         </div>
-                        <div>
-                            <a href="#">
-                                <img src="media/icons/minus-circle.svg" alt="minus">
+                                        </div>
+                                        <div class="product2">
+                            <a>
+                                <img src="media/photos/logo_Prancheta 1 cópia 9.png" alt="produto 3">
                             </a>
-                            <input ng-model="quantity">
-                            <a href="#">
-                                <img src="media/icons/plus-circle.svg" alt="plus">
+                                <div class="description2">
+                                    <a>Cannabis Sativa Óleo de Limpeza</a>
+                                    <span>R$ 10,00</span>
+                                    <span>125ml</span>
+                                    <span>IVA incluído</span>
+                                    <span>Preço Válido de 1 a 31 de fevereiro</span>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="media/icons/minus-circle.svg" alt="minus">
+                                    </a>
+                                    <input ng-model="quantity">
+                                    <a href="#">
+                                        <img src="media/icons/plus-circle.svg" alt="plus">
+                                    </a>
+                                    <a href="#">
+                                        <span>Adicionar</span>
+                                    </a>
+                                </div>
+                                        </div>
+                                        <div class="product3">
+                            <a>
+                                <img src="media/photos/logo_Prancheta 1 cópia 8.png" alt="produto 2">
                             </a>
-                            <a href="#">
-                                <span>Adicionar</span>
-                            </a>
-                        </div>
+                            <div>
+                                <div class="description3">
+                                    <a>Cannabis Sativa Óleo de Limpeza</a>
+                                    <span>R$ 10,00</span>
+                                    <span>125ml</span>
+                                    <span>IVA incluído</span>
+                                    <span>Preço Válido de 1 a 31 de fevereiro</span>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="media/icons/minus-circle.svg" alt="minus">
+                                    </a>
+                                    <input ng-model="quantity">
+                                    <a href="#">
+                                        <img src="media/icons/plus-circle.svg" alt="plus">
+                                    </a>
+                                    <a href="#">
+                                        <span>Adicionar</span>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <a>
-                            <img src="media/photos/logo_Prancheta 1 cópia 9.png" alt="produto 3">
-                        </a>
-                    </div>
-                    <div>
-                        <div>
-                            <a>Cannabis Sativa Óleo de Limpeza</a>
-                            <div>R$ 10,00</div>
-                            <div>125ml</div>
-                            <div>IVA incluído</div>
-                            <div>Preço Válido de 1 a 31 de fevereiro</div>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="media/icons/minus-circle.svg" alt="minus">
-                            </a>
-                            <input ng-model="quantity">
-                            <a href="#">
-                                <img src="media/icons/plus-circle.svg" alt="plus">
-                            </a>
-                            <a href="#">
-                                <span>Adicionar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <a>
-                            <img src="media/photos/logo_Prancheta 1 cópia 8.png" alt="produto 2">
-                        </a>
-                    </div>
-                    <div>
-                        <div>
-                            <a>Cannabis Sativa Óleo de Limpeza</a>
-                            <div>R$ 10,00</div>
-                            <div>125ml</div>
-                            <div>IVA incluído</div>
-                            <div>Preço Válido de 1 a 31 de fevereiro</div>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="media/icons/minus-circle.svg" alt="minus">
-                            </a>
-                            <input ng-model="quantity">
-                            <a href="#">
-                                <img src="media/icons/plus-circle.svg" alt="plus">
-                            </a>
-                            <a href="#">
-                                <span>Adicionar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- início da barra lateral de filtros-->
         <aside>
             <!-- O aside ficará alinhada à esquerda e, futuramente, terá uma barra de seleção de intervalos de preço -->
-            <div>
                 <h2>Facilite sua busca com os filtros abaixo:</h2>
-            </div>
             <div>
                 <h3>Categorias</h3>
                 <ul>
@@ -216,53 +201,53 @@
         <!-- fim da barra lateral de filtros -->
     </main>
     <footer>
-        <div>
-            <form>
-                <label for="mailchimp">Saiba Tudo Sobre As Melhores Novidade e Promoções</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email..." required>
-                <button type="submit" title="inscription">
-                    <img src="media/icons/mail.svg">
-                </button>
-            </form>
-        </div>
-        <div>
-            <h4>Loja</h4>
-            <ul>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="#">Envio e Devoluções</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Segurança</h4>
+        <!-- Esse campo será utilizado para receber o e-mail dos clientes e inscrevê-los em e-mail marketing-->
             <div>
-                <img src="media/icons/shield.svg" alt="ícone de proteção">
-                <p>
-                    Ambiente 100% Seguro. Sua Informação
-                    é Protegida Pela Criptografia SSL 256-Bit
-                </p>
+                <form class="subscribe">
+                    <label for="mailchimp">Saiba Tudo Sobre As Melhores Novidade e Promoções</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email..." required class="mailchimp-input">
+                </form>
+                <!-- Esse campo será utilizado para receber o e-mail dos clientes e inscrevê-los em e-mail marketing-->
             </div>
-        </div>
-        <div>
-            <h4>Métodos de Pagamentos Aceitos</h4>
-            <img src="media/photos/compra-segura-e1600188323682-1024x322-1.png">
-        </div>
-        <div>
-            <div>
-                <a href="#"><img src="media/icons/whatsapp.svg" alt="ícone do WhatsApp"></a>
+            <div class="footer-grid">
+                <div>
+                    <h4>Loja</h4>
+                    <ul>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">Envio e Devoluções</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Segurança</h4>
+                    <div>
+                        <p>
+                            Ambiente 100% Seguro. Sua Informação
+                            é Protegida Pela Criptografia SSL 256-Bit
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Métodos de Pagamentos Aceitos</h4>
+                    <img src="media/photos/compra-segura-e1600188323682-1024x322-1.png">
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="media/icons/whatsapp.svg" alt="ícone do WhatsApp"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="media/icons/facebook.svg" alt="ícone do Facebook"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="media/icons/instagram (1).svg" alt="ícone do Instagram"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#"><img src="media/icons/facebook.svg" alt="ícone do Facebook"></a>
+            <div class="info-site">
+                <p> &#169;GreenMommy - Todos os Direitos reservados.</p>
             </div>
-            <div>
-                <a href="#"><img src="media/icons/instagram (1).svg" alt="ícone do Instagram"></a>
-            </div>
-        </div>
-        <div>
-            <p> &#169;GreenMommy - Todos os Direitos reservados.</p>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
